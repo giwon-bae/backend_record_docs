@@ -17,6 +17,9 @@
     </toc-element>
     <toc-element topic="Reference-Hub.md">
         <toc-element topic="Basic.md"/>
+        <toc-element topic="AWS-Ref.md"/>
     </toc-element>
-    <toc-element topic="AWS-Ref.md"/>
+    <toc-element topic="Outsourcing-Development-Guide.md"/>
+    <toc-element topic="Markdown-need-to-move.md"/>
+    <toc-element topic="KMM-Outsourcing-need-to-move.md"/>
 </instance-profile>
