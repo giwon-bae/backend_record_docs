@@ -7,8 +7,12 @@
                  start-page="starter-topic.md">
 
     <toc-element topic="starter-topic.md"/>
+    <toc-element topic="Development-Guildlines.md"/>
     <toc-element topic="Backend-Basic.md">
         <toc-element topic="Internet.md">
+            <toc-element topic="Browser.md"/>
+            <toc-element topic="DNS.md"/>
+            <toc-element topic="Hosting.md"/>
             <toc-element topic="HTTP.md"/>
         </toc-element>
     </toc-element>
@@ -18,9 +22,12 @@
         <toc-element topic="IAM.md"/>
         <toc-element topic="connect-with-HTTPS.md"/>
     </toc-element>
+    <toc-element topic="AWS-Firebase.md"/>
+    <toc-element topic="MySQL.md"/>
     <toc-element topic="Reference-Hub.md">
         <toc-element topic="Basic.md"/>
         <toc-element topic="AWS-Ref.md"/>
+        <toc-element topic="MySQL-Ref.md"/>
     </toc-element>
     <toc-element topic="Outsourcing-Development-Guide.md"/>
     <toc-element topic="Markdown-need-to-move.md"/>
