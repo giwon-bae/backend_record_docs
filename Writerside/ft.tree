@@ -16,6 +16,7 @@
             <toc-element topic="HTTP.md"/>
         </toc-element>
     </toc-element>
+    <toc-element topic="Cache.md"/>
     <toc-element topic="AWS.md">
         <toc-element topic="EC2.md">
         </toc-element>
@@ -28,6 +29,8 @@
         <toc-element topic="Basic.md"/>
         <toc-element topic="AWS-Ref.md"/>
         <toc-element topic="MySQL-Ref.md"/>
+        <toc-element topic="WebStorm.md"/>
+        <toc-element topic="DataGrip.md"/>
     </toc-element>
     <toc-element topic="Outsourcing-Development-Guide.md"/>
     <toc-element topic="Markdown-need-to-move.md"/>
