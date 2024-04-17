@@ -15,8 +15,17 @@
             <toc-element topic="Hosting.md"/>
             <toc-element topic="HTTP.md"/>
         </toc-element>
+        <toc-element topic="OS.md">
+            <toc-element topic="Process.md"/>
+            <toc-element topic="Thread.md"/>
+            <toc-element topic="Memory.md"/>
+            <toc-element topic="IPC.md"/>
+            <toc-element topic="I-O.md"/>
+            <toc-element topic="POSIX.md"/>
+        </toc-element>
+        <toc-element topic="Network.md"/>
+        <toc-element topic="Cache.md"/>
     </toc-element>
-    <toc-element topic="Cache.md"/>
     <toc-element topic="AWS.md">
         <toc-element topic="EC2.md">
         </toc-element>
