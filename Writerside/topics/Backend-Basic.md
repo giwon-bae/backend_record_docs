@@ -1,3 +1,3 @@
 # Backend Basic
 
-Start typing here...
+이론 공부 기록
