@@ -25,11 +25,22 @@ Tool: [Lucid Chart](https://www.lucidchart.com/pages/)
    - 최적화
 
 네이밍 규칙
-1. Schema Name
+스키마 - 대문자
+나머지 모두 소문자
+_ 언더스코어 사용
+1. Common
+   - 단어와 단어 사이는 '_'로 구분
+   - 지나친 약어 사용 금지, 생소한 약어는 다이어그램 내부에 
+2. Schema Name
    - 영어 대문자로 작성
-2. Table Name
-3. Column Name 
-4. Primary Key Name 
-5. Foreign Key Name
+3. Table Name
+   - 영어 소문자로 작성
+4. Column Name 
+   - 영어 소문자로 작성
+   - 가능하다면 모든 테이블에서 
+5. Primary Key Name
+   - 일반적으로 '[테이블명]_id' 형태로 사용
+6. Foreign Key Name
+   - 참조하는 테이블의 기본 키 이름을 그대로 사용
 
 ** 해당 지침은 추후 사용하는 프레임워크나 언어 등에 따라 변경될 수 있습니다.
