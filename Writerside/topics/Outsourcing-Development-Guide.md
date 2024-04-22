@@ -86,7 +86,7 @@
 5. 로컬 작업 환경 셋팅
    5.1 WebStorm
       1. New Project -> Empty Project 생성
-      2. Tools ->  Deployment -> Configuration -> SSH configuration 옆의 점 3개 클릭
+      2. Tools ->  Deployment -> Configuration -> SFTP 파일 생성 -> SSH configuration 옆의 점 3개 클릭
       3. Host(IP 주소), Username(일반적으로 ubuntu) 작성 후 Key pair를 통한 인증
       4. Root path Autodetect, 로컬 파일과 서버 파일 Mapping (폴더명을 일치 시켜줘야하는 듯함)
       5. Tools -> Deployment -> Options -> Upload changed files automatically to the default server 설정   
@@ -101,3 +101,24 @@
 6. 초기화 설정
    npm init - package name, version 등을 설정하고 초기화
    npm i express - express 설치
+7. 웹 서버 설치
+   nginx 사용
+   1. sudo apt update: 패키지 목록 업데이트
+   2. sudo apt install nginx: nginx 설치
+   3. sudo systemctl status nginx: nginx 상태 확인
+      시작되지 않았다면 수동 시작: sudo systemctl start nginx
+8. 웹 서버 설정
+   1. cd /etc/nginx/sites-available/ 디렉터리 이동
+   2. sudo nano default 폴더 열기
+   3. 설정 변경
+      server_name 실제 도메인 or IP 주소로 변경
+      
+      location /api {
+        proxy_pass http://localhost:3000; # Node.js 애플리케이션으로 전달
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+      }
+   4. sudo systemctl restart nginx: nginx 재시작
