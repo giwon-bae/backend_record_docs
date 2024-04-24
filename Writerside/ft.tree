@@ -28,8 +28,10 @@
     </toc-element>
     <toc-element topic="AWS.md">
         <toc-element topic="EC2.md">
+            <toc-element topic="Load-Balancing.md"/>
         </toc-element>
         <toc-element topic="IAM.md"/>
+        <toc-element topic="ACM.md"/>
         <toc-element topic="connect-with-HTTPS.md"/>
         <toc-element topic="AWS-Firebase.md"/>
     </toc-element>
